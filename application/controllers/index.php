@@ -10,16 +10,7 @@ class Index extends CI_Controller {
 
 	function index()
 	{
-		$this->load->view('test');
-	}
-
-	function test_index()
-	{
 		$this->load->view('index');
 	}
 
-	function test_view()
-	{
-		$this->load->view('header');
-	}
 }
