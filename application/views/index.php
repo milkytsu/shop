@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>my style</title>
+	<title><?php echo isset($title) ? $title : '' ; ?></title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/general.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/home.css">
 </head>
 <body>
 	<div id="top">
@@ -68,7 +69,7 @@
 		<div class="sep20"></div>
 		<!-- main box start -->	
 		<div class="box">
-			<div class="num">
+			<div class="row">
 				<!-- sidebar start -->
 				<div id="sidebar" class="span3">
 					<div id="category">
@@ -250,12 +251,7 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$('#myCarousel').carousel(
-		{
-			interval: 5000
-		})
-		$('#hot').carousel
-		{
+		$('.carousel').carousel({
 			interval: 5000
 		})
 	</script>

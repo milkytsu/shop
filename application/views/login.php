@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>my style</title>
+	<title><?php echo isset($title) ? $title : '' ; ?></title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/general.css">

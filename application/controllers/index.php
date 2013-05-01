@@ -10,7 +10,8 @@ class Index extends CI_Controller {
 
 	function index()
 	{
-		$this->load->view('index');
+		$data['title'] = 'welcome to my shop';
+		$this->load->view('index', $data);
 	}
 
 }
