@@ -8,19 +8,21 @@
 </head>
 <body>
 	<div id="top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a id="brand" href="<?php echo base_url(); ?>" name="top">shop</a>
-				<form class="navbar-search pull-left">
-					<input type="text" class="search-query" placeholder="Search">
-				</form>
-				<div class="navbar">
-					<ul class="nav pull-right">
-						<li><a href="<?php echo base_url(); ?>">HOME</a></li>
-						<li class="divider-vertical"></li>
-						<li><a href="./register">Register</a></li>
-						<li><a href="./login">Log In</a></li>
-					</ul>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="<?php echo base_url(); ?>" name="top">shop</a>
+					<form class="navbar-search pull-left">
+						<input type="text" class="search-query" placeholder="Search">
+					</form>
+					<div class="navbar">
+						<ul class="nav pull-right">
+							<li><a href="<?php echo base_url(); ?>">HOME</a></li>
+							<li class="divider-vertical"></li>
+							<li><a href="<?php echo site_url(); ?>/register">Register</a></li>
+							<li><a href="<?php echo site_url(); ?>/login">Sign in</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
