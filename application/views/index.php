@@ -40,7 +40,7 @@
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 				<div class="active item">
-					<img src="<?php echo base_url(); ?>assets/img/01.jpg">
+					<a href="<?php echo site_url(); ?>/detail?pid=1"><img src="<?php echo base_url(); ?>assets/img/01.jpg"></a>
 					<div class="carousel-caption">
 						<h4>First label</h4>
 						<p>i'm the first label</p>

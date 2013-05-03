@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/general.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/log.css">
 </head>
 <body>
 	<div id="top">
@@ -31,6 +32,34 @@
 		<div class="sep20"></div>
 		</div>
 		<div class="box">
+			<!-- login form start -->
+			<div class="login_form">
+				<form method="POST">
+					<table>
+						<tr>
+							<td class="text-right"><label for="username">Username:&nbsp;</label></td>
+							<td><input class="span4" type="text" name="username" id="username" placeholder="Username" /></td>
+						</tr>
+						<tr>
+							<td class="text-right"><label for="userpass">Password:&nbsp;</label></td>
+							<td><input class="span4" type="password" name="userpass" id="userpass" placeholder="Password" /></td>
+						</tr>
+						<tr>
+							<td class="text-right"><label for="vali_code">Validation Code:&nbsp;</label></td>
+							<td><input class="span2" type="text" name="vali_code" id="vali_code" />&nbsp;&nbsp;&nbsp;&nbsp;
+								<input class="span2" type="text" />
+							</td>
+						</tr>
+						<tr>
+							<td class="sep20"></td>
+						</tr>
+						<tr>
+							<td colspan="3" class="text-center"><input class="btn btn-primary span4" type="submit" name="submit" id="submit" value="Sign in" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<!-- login form end -->
 		</div>
 	</div>
 	<div id="footer">
@@ -43,6 +72,5 @@
 	</div>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/bootstrap.min.js"></script>
-	
 </body>
 </html>

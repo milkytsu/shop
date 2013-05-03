@@ -63,20 +63,20 @@
 					<form action="./register?step=2" method="POST">
 						<table>
 							<tr>
-								<td class="text-right"><label for="username">User name:&nbsp;</label></td>
-								<td><input class="span4" type="text" name="username" id="username" placeholder="username" /></td>
+								<td class="text-right"><label for="username">Username:&nbsp;</label></td>
+								<td><input class="span4" type="text" name="username" id="username" placeholder="Username" /></td>
 							</tr>
 							<tr>
 								<td class="text-right"><label for="email">E-mail:&nbsp;</label></td>
 								<td><input class="span4" type="text" name="email" id="email" placeholder="E-mail" /></td>
 							</tr>
 							<tr>
-								<td class="text-right"><label for="userpass">User password:&nbsp;</label></td>
-								<td><input class="span4" type="password" name="userpass" id="userpass" placeholder="user's password" /></td>
+								<td class="text-right"><label for="userpass">Password:&nbsp;</label></td>
+								<td><input class="span4" type="password" name="userpass" id="userpass" placeholder="Password" /></td>
 							</tr>
 							<tr>
 								<td class="text-right"><label for="passconf">Confirm password:&nbsp;</label></td>
-								<td><input class="span4" type="password" name="passconf" id="passconf" placeholder="confirm password" /></td>
+								<td><input class="span4" type="password" name="passconf" id="passconf" placeholder="Confirm password" /></td>
 							</tr>
 							<tr>
 								<td class="text-right"><label for="vali_code">Validation Code:&nbsp;</label></td>
@@ -113,6 +113,5 @@
 	</div>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/bootstrap.min.js"></script>
-	
 </body>
 </html>
