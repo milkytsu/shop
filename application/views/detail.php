@@ -33,7 +33,7 @@
 		<!-- box start -->
 		<div class="box">
 			<!-- product pic start -->
-			<div class="product">
+			<div class="detail_product">
 				<div class="pic">
 					<div>
 						<img src="<?php echo base_url(); ?>assets/img/product/product5.jpg" />
@@ -42,11 +42,11 @@
 						<p>thumbnail pic</p>
 					</div>
 				</div>
-				<div class="detail">
+				<div class="product_intro">
 					<h4>Product Name</h4>
 					<hr />
 					<p>product code: 123456</p>
-					<p>product price: <span class="price">$69</span></p>
+					<p>product price: <span class="price">$69.00</span></p>
 					<p>product scors: <span class="bigstar45"></span><span>(<a href="#">10 comments</a>)</span></p>
 					<p>stocks:100</p>
 					<p>select item
@@ -62,6 +62,7 @@
 						<span><i class="icon-plus"></i></span>
 					</p>
 					<p class="chosen">you have chosen: red</p>
+					<p><button class="btn btn-large" type="button"><i class="icon-shopping-cart"></i>Add to Cart</button></p>
 				</div>
 			</div>
 			<!-- product pic end -->
@@ -111,6 +112,43 @@
 				<!-- sidebar end -->
 				<!-- content start -->
 				<div id="content" class="span9">
+					<ul id="product_detail" class="nav nav-tabs">
+						<li class="active">
+							<a href="#detail" data-toggle="tab">Product Details</a>
+						</li>
+						<li>
+							<a href="#comments" data-toggle="tab">Comments</a>
+						</li>
+					</ul>	
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="detail">
+							<!-- product intro start -->
+							<div id="intro">
+								<ul class="inline">
+									<li>product name: an earphone</li>
+									<li>product code: 123456</li>
+									<li>brand: i don't know</li>
+									<li>register time: 2013-05-04 12:00:00</li>
+									<li>weight: 500.0g</li>
+									<li>producing area: China</li>
+								</ul>	
+							</div>
+							<!-- product intro end -->
+							<!-- product detail start -->
+							<div class="product_detail">
+								<div class="text-center">	
+									<img class="detail_pic" src="<?php echo base_url(); ?>assets/img/product/product1.jpg" />
+								</div>
+								<p>product 1</p>
+							</div>
+							<!-- product detail end -->
+						</div>
+						<div class="tab-pane fade" id="comments">
+							<p>comments</p>	
+						</div>
+					</div>
+						
+					</div>
 				</div>
 				<!-- content end -->
 			</div>
@@ -128,5 +166,9 @@
 	</div>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+
+	</script>
 </body>
 </html>

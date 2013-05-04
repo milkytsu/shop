@@ -1,6 +1,6 @@
-.pic, .detail
+.pic, .product_intro
 {
-	border: solid 1px;
+	/*border: solid 1px;*/
 }
 
 .pic
@@ -10,7 +10,7 @@
 	float: left;
 }
 
-.detail
+.product_intro
 {
 	width: 610px;
 	height: 350px;
@@ -27,6 +27,11 @@
 .chosen
 {
 	color: red;
+}
+
+#intro ul li
+{
+	width: 220px;
 }
 
 .bigstar15,.bigstar10,.bigstar05,.bigstar00
