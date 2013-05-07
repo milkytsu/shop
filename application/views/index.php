@@ -74,12 +74,12 @@
 				<div id="sidebar" class="span3">
 					<div id="category">
 						<ul class="nav nav-tabs nav-stacked">
-							<li><a href="#">ALL Category</a></li>
-							<li><a href="#">Category</a></li>
-							<li><a href="#">Category</a></li>
-							<li><a href="#">Category</a></li>
-							<li><a href="#">Category</a></li>
-							<li><a href="#">Category</a></li>
+							<li><a href="<?php echo site_url(); ?>/category">ALL Category</a></li>
+							<li><a href="<?php echo site_url(); ?>/category">Category</a></li>
+							<li><a href="<?php echo site_url(); ?>/category">Category</a></li>
+							<li><a href="<?php echo site_url(); ?>/category">Category</a></li>
+							<li><a href="<?php echo site_url(); ?>/category">Category</a></li>
+							<li><a href="<?php echo site_url(); ?>/category">Category</a></li>
 						</ul>
 					</div>
 					<!-- promo area start -->

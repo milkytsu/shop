@@ -57,12 +57,29 @@
 						</select>
 					</p>
 					<p>order number
-						<i class="icon-minus"></i>
-						<span><input class="span1" type="number" value="1" /></span>
-						<span><i class="icon-plus"></i></span>
+						<span class="input-prepend input-append">
+								<button class="btn" type="button"><i class="icon-minus"></i></button>
+								<input class="span1" type="text">
+								<button class="btn" type="button"><i class="icon-plus"></i></button>
+						</span>
 					</p>
 					<p class="chosen">you have chosen: red</p>
-					<p><button class="btn btn-large" type="button"><i class="icon-shopping-cart"></i>Add to Cart</button></p>
+					<p><button id="add_cart_btn" class="btn btn-large" type="button" data-goggle="modal" data-target="#add_cart"><i class="icon-shopping-cart"></i>Add to Cart</button></p>
+					<!-- modal start -->
+					<div id="add_cart_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h3 id="myModalLabel">Add product to cart</h3>
+						</div>
+						<div class="modal-body">
+							<p><a class="btn" href="<?php echo site_url(); ?>/cart?pid=1">go to cart to pay</a>
+							<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">keep shopping</button></p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn" data-dismiss="modal" aria-hidden="true">Cancle</button>
+						</div>
+					</div>
+					<!-- modal end -->
 				</div>
 			</div>
 			<!-- product pic end -->
@@ -167,7 +184,12 @@
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/lib/bootstrap.min.js"></script>
 	<script type="text/javascript">
-
+		$('#add_cart_btn').click(function()
+		{
+			$('#add_cart_modal').modal({
+				backdrop: false
+			});
+		})
 
 	</script>
 </body>
