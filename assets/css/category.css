@@ -1,0 +1,48 @@
+#brand li
+{
+	width: 150px;
+}
+
+.b-img
+{
+	margin-bottom: 20px;
+	border-bottom: dotted 1px #ccc;
+}
+
+.b-name
+{
+	
+}
+
+.cate_main
+{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.sub_left, .sub_right
+{
+	width: 48%;
+	/*border: solid 1px;*/
+}
+
+.cate_content dl
+{
+	border-bottom: dotted 1px #ccc;
+}
+
+#cate_sub dt
+{
+	width: 80px;
+}
+
+#cate_sub dd
+{
+	width: 380px;
+}
+
+#cate_sub em
+{
+	font-style: normal;
+	margin-right: 16px;
+}

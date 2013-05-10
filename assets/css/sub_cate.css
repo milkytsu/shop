@@ -1,0 +1,14 @@
+h4
+{
+	margin-top: 0px;
+}
+
+.select_attr
+{
+	border-top: 1px dotted #ccc;
+}
+
+.select_attr li
+{
+	width: 80px;
+}
